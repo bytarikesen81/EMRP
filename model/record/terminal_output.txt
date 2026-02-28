@@ -1,0 +1,47 @@
+(venv) esen@raspberrypi:~/Desktop/Record $ python record.py
+[INFO] Final parameters:
+[INFO] A=96, S=48, Fs=100.0 Hz, D=150.0 s, K=200 windows/class
+[INFO] Output files: Move.csv, Shake.csv, Rest.csv
+
+[INFO] Initializing MPU6050...
+[OK] MPU6050 initialized.
+[INFO] Effective read speed (no pacing): ~594.8 samples/s
+
+[READY] Press ENTER to start 'Move'. Instruction: Move the device back and forth (clear movement). 
+[REC] Recording 'Move' for 150.0 seconds at ~100.0 Hz...
+[INFO] previewing the first 5 raw samples before recording....
+{SAMPLE} (-9260, -7544, 9968, 4300, -641, -1490)
+{SAMPLE} (-7848, -7484, 10548, 3258, 836, -2208)
+{SAMPLE} (-7764, -6896, 10044, 2968, 2305, -1708)
+{SAMPLE} (-7848, -6720, 9804, 2500, 1788, -93)
+{SAMPLE} (-8220, -7152, 11136, 3252, 1196, 1154)
+[INFO] Collected samples: 14851
+[INFO] Extracted windows (before selection): 308
+[OK] Wrote 200 windows to: imu_raw_ds_final/Move.csv
+
+[READY] Press ENTER to start 'Shake'. Instruction: Gently shake/rotate around x/y/z axes (clear shake). 
+[REC] Recording 'Shake' for 150.0 seconds at ~100.0 Hz...
+[INFO] previewing the first 5 raw samples before recording....
+{SAMPLE} (1532, 15252, 11760, -29857, -3147, 9893)
+{SAMPLE} (6500, -7548, 18544, -32768, -8798, 21640)
+{SAMPLE} (6488, 168, 15000, -1383, -5680, -736)
+{SAMPLE} (3784, 1664, 15504, -3584, -3722, -2545)
+{SAMPLE} (5748, 2840, 10500, -1891, -4097, -2574)
+[INFO] Collected samples: 14854
+[INFO] Extracted windows (before selection): 308
+[OK] Wrote 200 windows to: imu_raw_ds_final/Shake.csv
+
+[READY] Press ENTER to start 'Rest'. Instruction: Leave the device free (no intentional movement). 
+[REC] Recording 'Rest' for 150.0 seconds at ~100.0 Hz...
+[INFO] previewing the first 5 raw samples before recording....
+{SAMPLE} (1212, -1360, 16240, 2337, -1281, -559)
+{SAMPLE} (1452, -1008, 15852, 548, -1047, -475)
+{SAMPLE} (692, -964, 17756, -3466, -1867, -722)
+{SAMPLE} (1688, -1464, 15224, -4310, -1701, -159)
+{SAMPLE} (1424, -1664, 16088, -3818, -1169, 32)
+[INFO] Collected samples: 14848
+[INFO] Extracted windows (before selection): 308
+[OK] Wrote 200 windows to: imu_raw_ds_final/Rest.csv
+
+[DONE] Dataset generation completed.
+[DONE] Output directory: imu_raw_ds_final

@@ -1,0 +1,54 @@
+(venv) esen@raspberrypi:~/Desktop/Record $ python3 record_analyzer.py --move ./imu_raw_ds_final/Move_clean.csv --shake ./imu_raw_ds_final/Shake_clean.csv --rest ./imu_raw_ds_final/Rest_clean.csv 
+
+=== Move ===
+Total samples: 17664  |  Total values: 105984
+Saturation: 0.009%  (10/105984)
+
+Per-axis stats (min / max / mean / std / mean_abs / sat%):
+  ax: -16048 / 17680 / 2371.3 / 3701.1 / 3588.5 / 0.000%
+  ay: -24540 / 29644 / 1680.3 / 5091.2 / 3695.3 / 0.000%
+  az: 2952 / 32767 / 15526.3 / 2600.6 / 15526.3 / 0.057%
+  gx: -25496 / 31428 / -436.0 / 3804.3 / 2625.6 / 0.000%
+  gy: -28154 / 30259 / -127.7 / 3766.8 / 2263.5 / 0.000%
+  gz: -22986 / 24749 / 224.7 / 3494.1 / 2175.1 / 0.000%
+
+Vector magnitude means:
+  accel |a| mean: 16928.8
+  gyro  |g| mean: 4875.2
+
+=== Shake ===
+Total samples: 19200  |  Total values: 115200
+Saturation: 0.359%  (413/115200)
+
+Per-axis stats (min / max / mean / std / mean_abs / sat%):
+  ax: -32768 / 18592 / 701.5 / 5301.3 / 3477.3 / 0.005%
+  ay: -25896 / 28652 / 2384.7 / 9255.8 / 7477.5 / 0.000%
+  az: -32768 / 32767 / 2365.2 / 12097.7 / 10861.0 / 0.016%
+  gx: -32768 / 32767 / -254.1 / 10248.6 / 6799.1 / 1.797%
+  gy: -32768 / 28633 / -533.3 / 5753.5 / 3891.1 / 0.021%
+  gz: -32768 / 32767 / 282.1 / 8503.2 / 5873.7 / 0.312%
+
+Vector magnitude means:
+  accel |a| mean: 16450.8
+  gyro  |g| mean: 12360.4
+
+=== Rest ===
+Total samples: 18912  |  Total values: 113472
+Saturation: 0.004%  (4/113472)
+
+Per-axis stats (min / max / mean / std / mean_abs / sat%):
+  ax: -12824 / 9428 / 467.5 / 740.1 / 642.6 / 0.000%
+  ay: -23120 / 22732 / -5412.3 / 11541.5 / 10199.4 / 0.000%
+  az: -32768 / 32767 / -1294.9 / 10360.1 / 7069.2 / 0.021%
+  gx: -22595 / 25477 / -660.5 / 1716.4 / 899.3 / 0.000%
+  gy: -23317 / 19743 / -161.1 / 1448.9 / 510.9 / 0.000%
+  gz: -18340 / 15152 / 154.7 / 819.1 / 361.8 / 0.000%
+
+Vector magnitude means:
+  accel |a| mean: 16490.4
+  gyro  |g| mean: 1291.4
+
+=== Class-to-class ratios (gyro magnitude mean) ===
+Shake / Rest: 9.57x
+Move  / Rest: 3.78x
+Shake / Move: 2.54x

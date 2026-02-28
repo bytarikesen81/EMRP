@@ -1,0 +1,2 @@
+../Core/Src/imu.c:12:5:imu_send_window	3120	static
+../Core/Src/imu.c:52:12:imu_collect_measure	56	static
